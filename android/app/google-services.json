@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "807271702020",
+    "project_id": "finpulse-ad920",
+    "storage_bucket": "finpulse-ad920.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807271702020:android:d40bab8ea3369555049f51",
+        "android_client_info": {
+          "package_name": "com.example.fin_pulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB04D9uk9Q0kQsnVLZf0ji3gbHLZS4u7pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
