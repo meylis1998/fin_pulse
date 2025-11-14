@@ -32,7 +32,7 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
-
+.claude
 # Firebase configuration (contains sensitive API keys)
 lib/firebase_options.dart
 
