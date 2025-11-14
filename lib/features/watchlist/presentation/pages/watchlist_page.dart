@@ -20,10 +20,10 @@ class WatchlistPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-            create: (_) =>
+        BlocProvider<WatchlistBloc>(
+            create: (context) =>
                 sl<WatchlistBloc>()..add(const LoadWatchlistEvent())),
-        BlocProvider(create: (_) => sl<MarketDataBloc>()),
+        BlocProvider<MarketDataBloc>(create: (context) => sl<MarketDataBloc>()),
       ],
       child: const _WatchlistView(),
     );
@@ -257,8 +257,8 @@ class _WatchlistItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Fetch quote data for this symbol
-    return BlocProvider(
-      create: (_) => sl<MarketDataBloc>()
+    return BlocProvider<MarketDataBloc>(
+      create: (context) => sl<MarketDataBloc>()
         ..add(
           item.isCrypto
               ? FetchCryptoQuoteEvent(item.symbol)

@@ -26,8 +26,8 @@ class AssetDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) {
+    return BlocProvider<MarketDataBloc>(
+      create: (context) {
         final bloc = sl<MarketDataBloc>();
         bloc.add(
           isCrypto
